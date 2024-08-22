@@ -1,0 +1,696 @@
+:root {
+	--bs-primary-bs: #e77817;
+	--bs-secondary-bs: #28166f;
+}
+
+.bg-primary-bs {
+	--bs-bg-opacity: 1;
+	background-color: var(--bs-secondary-bs) !important;
+}
+
+.bg-primary.hoverable:hover {
+	background-color: #362770 !important;
+}
+
+.bg-gradient-primary {
+	background: -webkit-gradient(linear, left top, right bottom, from(#E77817), to(#28166F)) !important;
+	background: linear-gradient(to right, #E77817, #28166F) !important;
+  }
+  
+  .bg-gradient-secondary {
+	background: -webkit-gradient(linear, left top, right top, from(#e7ebf0), to(#868e96)) !important;
+	background: linear-gradient(to right, #e7ebf0, #868e96) !important;
+  }
+  
+  .bg-gradient-success {
+	background: -webkit-gradient(linear, left top, right top, from(#84d9d2), to(#07cdae)) !important;
+	background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+  }
+  
+  .bg-gradient-info {
+	background: -webkit-gradient(linear, left top, right top, from(#90caf9), color-stop(99%, #047edf)) !important;
+	background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+  }
+  
+  .bg-gradient-warning {
+	background: -webkit-gradient(linear, left top, right top, from(#f6e384), to(#ffd500)) !important;
+	background: linear-gradient(to right, #f6e384, #ffd500) !important;
+  }
+  
+  .bg-gradient-danger {
+	background: -webkit-gradient(linear, left top, right top, from(#ffbf96), to(#fe7096)) !important;
+	background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+  }
+  
+  .bg-gradient-light {
+	background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#e4e4e9)) !important;
+	background: linear-gradient(to bottom, #f4f4f4, #e4e4e9) !important;
+  }
+  
+  .bg-gradient-dark {
+	background: linear-gradient(89deg, #5e7188, #3e4b5b) !important;
+  }
+  
+
+.btn-primary-bs {
+	color: #000;
+	background-color: #e77817;
+	border-color: #e77817;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+		0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-primary-bs:hover {
+	color: #000;
+	background-color: #e88b3a;
+	border-color: #e89e5d;
+}
+
+.btn-check:focus + .btn-primary-bs,
+.btn-primary-bs:focus {
+	color: #000;
+	background-color: #e88b3a;
+	border-color: #e89e5d;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+		0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgba(0, 134, 210, 0.5);
+}
+
+.btn-check:active + .btn-primary-bs,
+.btn-check:checked + .btn-primary-bs,
+.btn-primary-bs.active,
+.btn-primary-bs:active,
+.show > .btn-primary-bs.dropdown-toggle {
+	color: #000;
+	background-color: #e89246;
+	border-color: #e89e5d;
+}
+
+.btn-check:active + .btn-primary-bs:focus,
+.btn-check:checked + .btn-primary-bs:focus,
+.btn-primary-bs.active:focus,
+.btn-primary-bs:active:focus,
+.show > .btn-primary-bs.dropdown-toggle:focus {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125),
+		0 0 0 0.25rem rgba(0, 134, 210, 0.5);
+}
+
+.btn-primary-bs.disabled,
+.btn-primary-bs:disabled {
+	color: #000;
+	background-color: #e77817;
+	border-color: #e77817;
+}
+
+.btn.btn-primary-bs {
+	color: #fff;
+	border-color: #e77817;
+	background-color: #e77817;
+}
+
+.btn.btn-primary-bs i {
+	color: #fff;
+}
+
+.btn.btn-primary-bs .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: #fff;
+}
+
+.btn.btn-primary-bs .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+
+.btn.btn-primary-bs.dropdown-toggle:after {
+	color: #fff;
+}
+
+.btn-check:active + .btn.btn-primary-bs,
+.btn-check:checked + .btn.btn-primary-bs,
+.btn.btn-primary-bs.active,
+.btn.btn-primary-bs.show,
+.btn.btn-primary-bs:active:not(.btn-active),
+.btn.btn-primary-bs:focus:not(.btn-active),
+.btn.btn-primary-bs:hover:not(.btn-active),
+.show > .btn.btn-primary-bs {
+	color: #fff;
+	border-color: #d97116;
+	background-color: #d97116 !important;
+}
+
+.btn-check:active + .btn.btn-primary-bs i,
+.btn-check:checked + .btn.btn-primary-bs i,
+.btn.btn-primary-bs.active i,
+.btn.btn-primary-bs.show i,
+.btn.btn-primary-bs:active:not(.btn-active) i,
+.btn.btn-primary-bs:focus:not(.btn-active) i,
+.btn.btn-primary-bs:hover:not(.btn-active) i,
+.show > .btn.btn-primary-bs i {
+	color: #fff;
+}
+
+.btn-check:active
+	+ .btn.btn-primary-bs
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn-check:checked
+	+ .btn.btn-primary-bs
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn.btn-primary-bs.active .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-primary-bs.show .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-primary-bs:active:not(.btn-active)
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn.btn-primary-bs:focus:not(.btn-active)
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn.btn-primary-bs:hover:not(.btn-active)
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.show > .btn.btn-primary-bs .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: #fff;
+}
+
+.btn-check:active
+	+ .btn.btn-primary-bs
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn-check:checked
+	+ .btn.btn-primary-bs
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn.btn-primary-bs.active .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-primary-bs.show .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-primary-bs:active:not(.btn-active)
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn.btn-primary-bs:focus:not(.btn-active)
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn.btn-primary-bs:hover:not(.btn-active)
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.show > .btn.btn-primary-bs .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+
+.btn-check:active + .btn.btn-primary-bs.dropdown-toggle:after,
+.btn-check:checked + .btn.btn-primary-bs.dropdown-toggle:after,
+.btn.btn-primary-bs.active.dropdown-toggle:after,
+.btn.btn-primary-bs.show.dropdown-toggle:after,
+.btn.btn-primary-bs:active:not(.btn-active).dropdown-toggle:after,
+.btn.btn-primary-bs:focus:not(.btn-active).dropdown-toggle:after,
+.btn.btn-primary-bs:hover:not(.btn-active).dropdown-toggle:after,
+.show > .btn.btn-primary-bs.dropdown-toggle:after {
+	color: #fff;
+}
+
+.explore-btn-primary-bs {
+	border: 0;
+	color: #fff;
+	background-color: #f07d18;
+}
+
+.explore-btn-primary-bs:hover {
+	color: #fff;
+	background-color: #cc6a14;
+}
+
+.btn-secondary-bs {
+	color: #000;
+	background-color: #28166f;
+	border-color: #28166f;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+		0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-secondary-bs:hover {
+	color: #000;
+	background-color: #362770;
+	border-color: #433870;
+}
+
+.btn-check:focus + .btn-secondary-bs,
+.btn-secondary-bs:focus {
+	color: #000;
+	background-color: #362770;
+	border-color: #433870;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+		0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem rgba(0, 134, 210, 0.5);
+}
+
+.btn-check:active + .btn-secondary-bs,
+.btn-check:checked + .btn-secondary-bs,
+.btn-secondary-bs.active,
+.btn-secondary-bs:active,
+.show > .btn-secondary-bs.dropdown-toggle {
+	color: #000;
+	background-color: #3a2d70;
+	border-color: #433870;
+}
+
+.btn-check:active + .btn-secondary-bs:focus,
+.btn-check:checked + .btn-secondary-bs:focus,
+.btn-secondary-bs.active:focus,
+.btn-secondary-bs:active:focus,
+.show > .btn-secondary-bs.dropdown-toggle:focus {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125),
+		0 0 0 0.25rem rgba(0, 134, 210, 0.5);
+}
+
+.btn-secondary-bs.disabled,
+.btn-secondary-bs:disabled {
+	color: #000;
+	background-color: #28166f;
+	border-color: #28166f;
+}
+
+.btn.btn-secondary-bs {
+	color: #fff;
+	border-color: #28166f;
+	background-color: #28166f;
+}
+
+.btn.btn-secondary-bs i {
+	color: #fff;
+}
+
+.btn.btn-secondary-bs .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: #fff;
+}
+
+.btn.btn-secondary-bs .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+
+.btn.btn-secondary-bs.dropdown-toggle:after {
+	color: #fff;
+}
+
+.btn-check:active + .btn.btn-secondary-bs,
+.btn-check:checked + .btn.btn-secondary-bs,
+.btn.btn-secondary-bs.active,
+.btn.btn-secondary-bs.show,
+.btn.btn-secondary-bs:active:not(.btn-active),
+.btn.btn-secondary-bs:focus:not(.btn-active),
+.btn.btn-secondary-bs:hover:not(.btn-active),
+.show > .btn.btn-secondary-bs {
+	color: #fff;
+	border-color: #d97116;
+	background-color: #d97116 !important;
+}
+
+.btn-check:active + .btn.btn-secondary-bs i,
+.btn-check:checked + .btn.btn-secondary-bs i,
+.btn.btn-secondary-bs.active i,
+.btn.btn-secondary-bs.show i,
+.btn.btn-secondary-bs:active:not(.btn-active) i,
+.btn.btn-secondary-bs:focus:not(.btn-active) i,
+.btn.btn-secondary-bs:hover:not(.btn-active) i,
+.show > .btn.btn-secondary-bs i {
+	color: #fff;
+}
+
+.btn-check:active
+	+ .btn.btn-secondary-bs
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn-check:checked
+	+ .btn.btn-secondary-bs
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs.active .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs.show .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs:active:not(.btn-active)
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs:focus:not(.btn-active)
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs:hover:not(.btn-active)
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.show > .btn.btn-secondary-bs .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: #fff;
+}
+
+.btn-check:active
+	+ .btn.btn-secondary-bs
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn-check:checked
+	+ .btn.btn-secondary-bs
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs.active .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs.show .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs:active:not(.btn-active)
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs:focus:not(.btn-active)
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.btn.btn-secondary-bs:hover:not(.btn-active)
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.show
+	> .btn.btn-secondary-bs
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+
+.btn-check:active + .btn.btn-secondary-bs.dropdown-toggle:after,
+.btn-check:checked + .btn.btn-secondary-bs.dropdown-toggle:after,
+.btn.btn-secondary-bs.active.dropdown-toggle:after,
+.btn.btn-secondary-bs.show.dropdown-toggle:after,
+.btn.btn-secondary-bs:active:not(.btn-active).dropdown-toggle:after,
+.btn.btn-secondary-bs:focus:not(.btn-active).dropdown-toggle:after,
+.btn.btn-secondary-bs:hover:not(.btn-active).dropdown-toggle:after,
+.show > .btn.btn-secondary-bs.dropdown-toggle:after {
+	color: #fff;
+}
+
+.explore-btn-secondary-bs {
+	border: 0;
+	color: #fff;
+	background-color: #261278;
+}
+
+.explore-btn-secondary-bs:hover {
+	color: #fff;
+	background-color: #210f66;
+}
+
+/*  */
+
+.menu-state-title-primary-bs
+	.menu-item
+	.menu-link:hover:not(.disabled):not(.active),
+.menu-state-title-primary-bs
+	.menu-item.hover
+	> .menu-link:not(.disabled):not(.active) {
+	transition: color 0.2s ease, background-color 0.2s ease;
+	color: var(--bs-primary-bs);
+}
+
+.menu-state-title-primary-bs
+	.menu-item
+	.menu-link:hover:not(.disabled):not(.active)
+	.menu-title,
+.menu-state-title-primary-bs
+	.menu-item.hover
+	> .menu-link:not(.disabled):not(.active)
+	.menu-title {
+	color: var(--bs-primary-bs);
+}
+
+.menu-state-title-primary-bs .menu-item.here > .menu-link,
+.menu-state-title-primary-bs .menu-item.show > .menu-link {
+	transition: color 0.2s ease, background-color 0.2s ease;
+	color: var(--bs-primary-bs);
+}
+
+.menu-state-title-primary-bs .menu-item.here > .menu-link .menu-title,
+.menu-state-title-primary-bs .menu-item.show > .menu-link .menu-title {
+	color: var(--bs-primary-bs);
+}
+
+.menu-state-title-primary-bs .menu-item .menu-link.active {
+	transition: color 0.2s ease, background-color 0.2s ease;
+	color: var(--bs-primary-bs);
+}
+
+.menu-state-title-primary-bs .menu-item .menu-link.active .menu-title {
+	color: var(--bs-primary-bs);
+}
+
+.menu-state-icon-primary-bs
+	.menu-item
+	.menu-link:hover:not(.disabled):not(.active),
+.menu-state-icon-primary-bs
+	.menu-item.hover
+	> .menu-link:not(.disabled):not(.active) {
+	transition: color 0.2s ease, background-color 0.2s ease;
+}
+.menu-state-icon-primary-bs
+	.menu-item
+	.menu-link:hover:not(.disabled):not(.active)
+	.menu-icon
+	i,
+.menu-state-icon-primary-bs
+	.menu-item.hover
+	> .menu-link:not(.disabled):not(.active)
+	.menu-icon
+	i {
+	color: var(--bs-primary-bs);
+}
+.menu-state-icon-primary-bs
+	.menu-item
+	.menu-link:hover:not(.disabled):not(.active)
+	.menu-icon
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.menu-state-icon-primary-bs
+	.menu-item.hover
+	> .menu-link:not(.disabled):not(.active)
+	.menu-icon
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: var(--bs-primary-bs);
+}
+.menu-state-icon-primary-bs
+	.menu-item
+	.menu-link:hover:not(.disabled):not(.active)
+	.menu-icon
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.menu-state-icon-primary-bs
+	.menu-item.hover
+	> .menu-link:not(.disabled):not(.active)
+	.menu-icon
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+.menu-state-icon-primary-bs .menu-item.here > .menu-link,
+.menu-state-icon-primary-bs .menu-item.show > .menu-link {
+	transition: color 0.2s ease, background-color 0.2s ease;
+}
+.menu-state-icon-primary-bs .menu-item.here > .menu-link .menu-icon i,
+.menu-state-icon-primary-bs .menu-item.show > .menu-link .menu-icon i {
+	color: var(--bs-primary-bs);
+}
+.menu-state-icon-primary-bs
+	.menu-item.here
+	> .menu-link
+	.menu-icon
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g),
+.menu-state-icon-primary-bs
+	.menu-item.show
+	> .menu-link
+	.menu-icon
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: var(--bs-primary-bs);
+}
+.menu-state-icon-primary-bs
+	.menu-item.here
+	> .menu-link
+	.menu-icon
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g),
+.menu-state-icon-primary-bs
+	.menu-item.show
+	> .menu-link
+	.menu-icon
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+.menu-state-icon-primary-bs .menu-item .menu-link.active {
+	transition: color 0.2s ease, background-color 0.2s ease;
+}
+.menu-state-icon-primary-bs .menu-item .menu-link.active .menu-icon i {
+	color: var(--bs-primary-bs);
+}
+.menu-state-icon-primary-bs
+	.menu-item
+	.menu-link.active
+	.menu-icon
+	.svg-icon
+	svg
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+	fill: var(--bs-primary-bs);
+}
+.menu-state-icon-primary-bs
+	.menu-item
+	.menu-link.active
+	.menu-icon
+	.svg-icon
+	svg:hover
+	[fill]:not(.permanent):not(g) {
+	transition: fill 0.3s ease;
+}
+
+.menu-state-bullet-primary-bs .menu-item .menu-link:hover:not(.disabled):not(.active),
+.menu-state-bullet-primary-bs .menu-item.hover>.menu-link:not(.disabled):not(.active) {
+    transition: color .2s ease, background-color .2s ease
+}
+
+.menu-state-bullet-primary-bs .menu-item .menu-link:hover:not(.disabled):not(.active) .menu-bullet .bullet,
+.menu-state-bullet-primary-bs .menu-item.hover>.menu-link:not(.disabled):not(.active) .menu-bullet .bullet {
+    background-color: var(--bs-primary-bs);
+}
+
+.menu-state-bullet-primary-bs .menu-item.here>.menu-link,
+.menu-state-bullet-primary-bs .menu-item.show>.menu-link {
+    transition: color .2s ease, background-color .2s ease
+}
+
+.menu-state-bullet-primary-bs .menu-item.here>.menu-link .menu-bullet .bullet,
+.menu-state-bullet-primary-bs .menu-item.show>.menu-link .menu-bullet .bullet {
+    background-color: var(--bs-primary-bs);
+}
+
+.menu-state-bullet-primary-bs .menu-item .menu-link.active {
+    transition: color .2s ease, background-color .2s ease
+}
+
+.menu-state-bullet-primary-bs .menu-item .menu-link.active .menu-bullet .bullet {
+    background-color: var(--bs-primary-bs);
+}
+
+/*  */
+
+.btn-check:active+.btn.btn-active-color-primary-bs,
+.btn-check:checked+.btn.btn-active-color-primary-bs,
+.btn.btn-active-color-primary-bs.active,
+.btn.btn-active-color-primary-bs.show,
+.btn.btn-active-color-primary-bs:active:not(.btn-active),
+.btn.btn-active-color-primary-bs:focus:not(.btn-active),
+.btn.btn-active-color-primary-bs:hover:not(.btn-active),
+.show>.btn.btn-active-color-primary-bs {
+    color: var(--bs-primary-bs);
+}
+
+.btn-check:active+.btn.btn-active-color-primary-bs i,
+.btn-check:checked+.btn.btn-active-color-primary-bs i,
+.btn.btn-active-color-primary-bs.active i,
+.btn.btn-active-color-primary-bs.show i,
+.btn.btn-active-color-primary-bs:active:not(.btn-active) i,
+.btn.btn-active-color-primary-bs:focus:not(.btn-active) i,
+.btn.btn-active-color-primary-bs:hover:not(.btn-active) i,
+.show>.btn.btn-active-color-primary-bs i {
+    color: var(--bs-primary-bs);
+}
+
+.btn-check:active+.btn.btn-active-color-primary-bs .svg-icon svg [fill]:not(.permanent):not(g),
+.btn-check:checked+.btn.btn-active-color-primary-bs .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs.active .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs.show .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs:active:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g),
+.show>.btn.btn-active-color-primary-bs .svg-icon svg [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease;
+    fill: var(--bs-primary-bs);
+}
+
+.btn-check:active+.btn.btn-active-color-primary-bs .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn-check:checked+.btn.btn-active-color-primary-bs .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs.active .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs.show .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs:active:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs:focus:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.btn.btn-active-color-primary-bs:hover:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g),
+.show>.btn.btn-active-color-primary-bs .svg-icon svg:hover [fill]:not(.permanent):not(g) {
+    transition: fill .3s ease
+}
+
+.btn-check:active+.btn.btn-active-color-primary-bs.dropdown-toggle:after,
+.btn-check:checked+.btn.btn-active-color-primary-bs.dropdown-toggle:after,
+.btn.btn-active-color-primary-bs.active.dropdown-toggle:after,
+.btn.btn-active-color-primary-bs.show.dropdown-toggle:after,
+.btn.btn-active-color-primary-bs:active:not(.btn-active).dropdown-toggle:after,
+.btn.btn-active-color-primary-bs:focus:not(.btn-active).dropdown-toggle:after,
+.btn.btn-active-color-primary-bs:hover:not(.btn-active).dropdown-toggle:after,
+.show>.btn.btn-active-color-primary-bs.dropdown-toggle:after {
+    color: var(--bs-primary-bs);
+}
+
+/* OrgChart */
+#tree {
+	width: 100%;
+	height: 800px;
+}
+
+/*partial*/
+.node.RUPS rect {
+	fill: #f57c00;
+}
+.node.RUPS text {
+	fill: #ffffff;
+}
+
+.node.Direktur rect {
+	fill: #039be5;
+}
+.node.Direktur text {
+	fill: #ffffff;
+}
+
+.node rect {
+	fill: #ffffff;
+}
+.node text {
+	fill: #000000;
+}
+
+.select2-readonly + .select2-container .select2-selection {
+    background-color: #e9ecef; /* Warna background untuk meniru readonly */
+    pointer-events: none; /* Menonaktifkan interaksi pengguna */
+}
+
+.bold-input::placeholder {
+	font-weight: bold;
+}
+.bold-input {
+	font-weight: bold;
+}
